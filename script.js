@@ -16,10 +16,6 @@ let gameBoard = (function(){
     let board = new Array(9).fill(0);
     let player = playerOne.mark;
     
-    const newBoard = () => {
-        board.fill(0);
-        player = playerOne.mark;
-    }
     return {
         
         makeMove: (place) => {
@@ -36,7 +32,6 @@ let gameBoard = (function(){
                     for (j=0; j<winCheck[i].length; j++) {
                         if (winCheck[i][j][0] != 0 && winCheck[i][j][0] === winCheck[i][j][1] && winCheck[i][j][1] === winCheck[i][j][2]) {
                             displayController.winUI(player)
-                            newBoard();
                             displayController.disableUI();
                             return console.log(`${player} wins!`)
                         }
