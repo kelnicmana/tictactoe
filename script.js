@@ -8,8 +8,8 @@ function Players(_name, _mark) {
     };
 };
 
-const playerOne = Players('Player One', 'x');
-const playerTwo = Players('Player Two', 'o');
+const playerOne = Players('Player One', 'X');
+const playerTwo = Players('Player Two', 'O');
 
 /// gameBoard module
 let gameBoard = (function(){
@@ -48,6 +48,7 @@ let gameBoard = (function(){
                 }
                 if (player === playerOne.mark) player = playerTwo.mark;
                 else player = playerOne.mark;
+                document.querySelector('.header').textContent=`${player}'s turn.`
                 console.log(`${player}'s turn.`);
             }
             return player;

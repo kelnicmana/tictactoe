@@ -1,29 +1,68 @@
 body {
     text-align: center;
     margin-top: 4rem;
+    background-color: #e0fbfc;
+}
+
+.wrap-all {
+    background-color: #f7fff7;
+    border: 0.15rem solid #98c1d9;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 25rem;
+    margin: auto;
+}
+
+h1 {
+    color: #ee6c4d;
+    text-shadow: 1px 1px #073b4c;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.75rem;
+    margin-top: 0.5rem;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 1px solid black;
     width: fit-content;
     margin: auto;
     margin-bottom: 2rem;
 }
 
 .spot {
-    font-family: arial, sans-serif;
+    color: #3d5a80;
+    font-family: 'Indie Flower', cursive;
     width: 6rem;
     height: 6rem;
-    border: 1px solid black;
+    border: 2px solid #3d5a80;
+    border-top: 0;
+    border-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
 }
 
+.two, .five, .eight {
+    border-right: 0;
+}
+
+.six, .seven, .eight {
+    border-bottom: 0;
+}
+
 .disable {
     pointer-events: none;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    width: 10rem;
+    background-color: #98c1d9;
+    border: 2px solid #3d5a80;
+    border-radius: 0.75rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25rem;
 }

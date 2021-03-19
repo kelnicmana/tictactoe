@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="wrap-all">
     <h1 class="header">Tic Tac Toe</h1>
     <div class="container">
         <div class="spot zero" data-key="0"></div>
@@ -19,6 +23,8 @@
         <div class="spot seven" data-key="7"></div>
         <div class="spot eight" data-key="8"></div>
     </div>
+</div>
+    <div class="turn"></div>
     <button class="btn" onclick="displayController.newGame()">New Game</button>
 
     <script src="script.js"></script>
