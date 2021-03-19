@@ -1,3 +1,8 @@
+body {
+    text-align: center;
+    margin-top: 4rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -5,10 +10,11 @@
     border: 1px solid black;
     width: fit-content;
     margin: auto;
-    margin-top: 10rem;
+    margin-bottom: 2rem;
 }
 
 .spot {
+    font-family: arial, sans-serif;
     width: 6rem;
     height: 6rem;
     border: 1px solid black;
@@ -16,4 +22,8 @@
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+}
+
+.disable {
+    pointer-events: none;
 }
