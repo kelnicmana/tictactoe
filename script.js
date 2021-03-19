@@ -45,11 +45,14 @@ let gameBoard = (function(){
                 const tieCheck = board.every(e => e != 0);
                 if (tieCheck === true) {
                     displayController.tieUI();
+                    console.log('tie');
                 }
-                if (player === playerOne.mark) player = playerTwo.mark;
-                else player = playerOne.mark;
-                document.querySelector('.header').textContent=`${player}'s turn.`
-                console.log(`${player}'s turn.`);
+                else {
+                    if (player === playerOne.mark) player = playerTwo.mark;
+                    else player = playerOne.mark;
+                    document.querySelector('.header').textContent=`${player}'s turn.`
+                    console.log(`${player}'s turn.`);
+                }
             }
             return player;
         },
