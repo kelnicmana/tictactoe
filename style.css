@@ -63,10 +63,11 @@ h1 {
 .btn {
     margin: 2rem 0.5rem;
     height: 3.5rem;
-    width: 8rem;
+    width: 9rem;
     background-color: #98c1d9;
     border: 2px solid #3d5a80;
     border-radius: 0.75rem;
     font-family: 'Fredoka One', cursive;
+    font-style: italic;
     font-size: 1.15rem;
 }
