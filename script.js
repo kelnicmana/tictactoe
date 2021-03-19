@@ -43,7 +43,7 @@ let gameBoard = (function(){
                     }
                 }
                 const tieCheck = board.every(e => e != 0);
-                if (tieCheck === false) {
+                if (tieCheck === true) {
                     displayController.tieUI();
                 }
                 if (player === playerOne.mark) player = playerTwo.mark;
